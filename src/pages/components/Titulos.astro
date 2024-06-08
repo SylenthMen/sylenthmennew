@@ -1,0 +1,31 @@
+---
+const { subTitu } = Astro.props;
+---
+
+<h2 class="color-change font-bold text-4xl mb-4 capitalize">{subTitu}</h2>
+
+<style>
+  .color-change {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(
+      90deg,
+      rgb(255, 0, 0),
+      rgb(0, 255, 0),
+      rgb(0, 0, 255)
+    );
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
+    animation: colorChange 3s infinite;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+</style>

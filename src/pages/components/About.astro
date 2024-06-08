@@ -1,18 +1,30 @@
-<section>
-  <div class="grid grid-cols-2 justify-center items-center p-4">
+---
+import Titulos from "./Titulos.astro";
+---
+
+<section id="about">
+  <div
+    class="grid sm:grid-cols-1 md:grid-cols-2 justify-center items-center p-4"
+  >
     <div>
-      <h2>acerca de mi</h2>
-      <p class="text-pretty">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        reiciendis commodi veritatis blanditiis, hic natus modi laudantium
-        corrupti adipisci beatae voluptatem nihil ratione possimus vero quisquam
-        veniam! Iusto et quae, aliquid quam, illo nulla soluta blanditiis,
-        quaerat dicta voluptate aperiam? Ipsam consequuntur eaque eius beatae
-        eos voluptatibus aspernatur architecto cumque?
+      <Titulos subTitu="acerca de mi" />
+      <p class="text-pretty text-white/55">
+        Soy Manuel, un DJ y productor de música electrónica de 24 años. Además
+        de mi pasión por la música, también me encanta la programación y los
+        videojuegos.
+      </p>
+      <p class="text-pretty mt-2 text-white/55">
+        Me gusta experimentar con diferentes géneros de música electrónica y
+        crear mi propio estilo. En mi tiempo libre, disfruto de jugar
+        videojuegos y trabajar en proyectos de programación. ¡Bienvenido a mi
+        página web.
       </p>
     </div>
     <div>
-      <img src="/favicon.svg" alt="una sabrosa imagen de algo" />
+      <img
+        src="/ima1.webp"
+        alt="imagen de un desarrollador futurista con luces neon"
+      />
     </div>
   </div>
 </section>

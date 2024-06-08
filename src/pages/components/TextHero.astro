@@ -1,0 +1,69 @@
+<h1>
+  bienvenido soy
+  <span style="--i:0;" data-text="programador.">programador.</span>
+  <span style="--i:1;" data-text="Dj.">Dj.</span>
+  <span style="--i:2;" data-text="streamer.">streamer.</span>
+</h1>
+
+<style>
+  :root {
+    --TextColor: #9a00e1;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 100px;
+    text-transform: capitalize;
+  }
+
+  h1 span {
+    text-transform: capitalize;
+    position: relative;
+    color: rgba(255, 255, 255, 0.1);
+    animation: displayText 9s infinite;
+    animation-delay: calc(-3s * var(--i));
+  }
+
+  @keyframes displayText {
+    0% {
+      display: inline-block;
+    }
+    33.33%,
+    100% {
+      display: none;
+    }
+  }
+
+  h1 span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: var(--TextColor);
+    overflow: hidden;
+    border-right: 4px solid var(--TextColor);
+    filter: drop-shadow(0 0 5px var(--TextColor))
+      drop-shadow(0 0 25px var(--TextColor));
+    animation: animate 3s steps(12) infinite;
+  }
+
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+</style>

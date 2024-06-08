@@ -1,0 +1,50 @@
+---
+import Titulos from "./Titulos.astro";
+import Tooltip from "./Tooltip.astro";
+---
+
+<section id="musica" class="p-4">
+  <div class="flex gap-x-2">
+    <Titulos subTitu="Musica" />
+    <Tooltip toltip="has click en cualquier imagen y te llevara a spotify" />
+  </div>
+  <p class="text-white/55 pb-4">aqui encontraras mi musica mas reciente</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="overflow-hidden">
+      <a
+        target="_blank"
+        href="https://open.spotify.com/intl-es/album/1ZkmHxvqgHNTbVyHTFnmTx?si=3AKbIHjHTT2xDYMxwoJIGA"
+      >
+        <img
+          class="m-auto p-2 hover:scale-105 transition-all"
+          src="/smash_heart.webp"
+          alt="psynow image artcover"
+        /></a
+      >
+    </div>
+    <div class="overflow-hidden">
+      <a
+        target="_blank"
+        href="https://open.spotify.com/intl-es/album/3TqNLZGSmoCifbOPFwGrSy?si=aXQbXqlFQlSsoZBHKwv0Wg"
+      >
+        <img
+          class="m-auto p-2 hover:scale-105 transition-all"
+          src="/psynow.webp"
+          alt="psynow image artcover"
+        /></a
+      >
+    </div>
+    <div class="overflow-hidden">
+      <a
+        target="_blank"
+        href="https://open.spotify.com/intl-es/album/3M4UgI2HKi6aOuzc1161WL?si=4y7H3tYcSACRHfw68_C8VQ"
+      >
+        <img
+          class="m-auto p-2 hover:scale-105 transition-all"
+          src="/galaxyx.webp"
+          alt="psynow image artcover"
+        /></a
+      >
+    </div>
+  </div>
+</section>

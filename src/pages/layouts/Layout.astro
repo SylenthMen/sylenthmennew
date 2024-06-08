@@ -10,6 +10,11 @@ const { desc } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={desc} />
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>{title}</title>
   </head>
   <body class="bg-black text-white">
