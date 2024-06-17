@@ -1,79 +1,32 @@
----
-import Planet from "./Planet.astro";
----
-
-<section>
-  <ul>
-    <li
-      class="card bg-purple-600/25 backdrop-blur-sm shadow-xl shadow-purple-600"
-    >
-      <h3
-        class="text-center font-bold text-2xl uppercase flex flex-col justify-center items-center mt-24"
-      >
-        llegando a todo el mundo
-      </h3>
-      <div class="flex flex-col justify-center items-center mt-8">
-        <Planet />
-      </div>
-    </li>
-
-    <li class="card bg-red-600/25 backdrop-blur-sm shadow-xl shadow-red-600">
-      <h3
-        class="text-center font-bold text-2xl uppercase flex flex-col justify-center items-center mt-24 mb-1"
-      >
-        youtube
-      </h3>
-      <img class="w-48 m-auto" src="/youtube.svg" alt="" />
-    </li>
-    <li class="card bg-pink-600/25 backdrop-blur-sm shadow-xl shadow-pink-600">
-      <h3
-        class="text-center font-bold text-2xl uppercase flex flex-col justify-center items-center mt-24"
-      >
-        instagram
-      </h3>
-      <img class="w-40 h-36 m-auto" src="/instagram.svg" alt="" />
-    </li>
-    <li class="card bg-white/25 backdrop-blur-sm shadow-xl shadow-white">
-      <h3
-        class="text-center font-bold text-2xl uppercase flex flex-col justify-center items-center mt-24"
-      >
-        web oficial
-      </h3>
-      <img class="w-48 m-auto -mt-12" src="/skulllogo.svg" alt="" />
-    </li>
-  </ul>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    :root {
-      --card-size: 250px;
-    }
-
-    ul {
-      align-items: center;
-      display: flex;
-      margin: 0;
-      padding: 0;
-      gap: 2rem;
-      overflow: auto;
-      padding-inline: calc(50cqi - (var(--card-size) * 0.5));
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-
-    ul::-webkit-scrollbar {
-      display: none;
-    }
-
-    ul li {
-      aspect-ratio: 3 / 4;
-      border-radius: 1rem;
-      flex: 1 0 var(--card-size);
-      overflow: hidden;
-      position: relative;
-      transition: all ease 0.3s;
-    }
-  </style>
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+  <div class="flex flex-col items-center">
+    <img
+      class="w-96 rounded-lg hover:shadow-xl hover:shadow-orange-600 hover:-translate-y-4 transition-all"
+      src="/person1.png"
+      alt="Persona 1"
+    />
+    <h3 class="mt-2 text-center">
+      Donde los sueños musicales se convierten en realidad
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      class="w-96 rounded-lg hover:shadow-xl hover:shadow-purple-600 hover:-translate-y-4 transition-all"
+      src="/person2.png"
+      alt="Persona 2"
+    />
+    <h3 class="mt-2 text-center">
+      La música es nuestra misión, el éxito de los artistas es nuestra pasión.
+    </h3>
+  </div>
+  <div class="flex flex-col items-center">
+    <img
+      class="w-96 rounded-lg hover:shadow-xl hover:shadow-white hover:-translate-y-4 transition-all"
+      src="/person3.png"
+      alt="Persona 3"
+    />
+    <h3 class="mt-2 text-center">
+      Transformando talento en melodías inmortales
+    </h3>
+  </div>
 </section>
