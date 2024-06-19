@@ -1,0 +1,84 @@
+<div class="card">
+  <img
+    class="w-60 h-60 justify-center items-center flex flex-col"
+    src="/twitch.svg"
+    alt="logotipo twitch"
+  />
+  <div class="card__content">
+    <p class="card__title">sigueme en twitch</p>
+    <p class="card__description mb-4">
+      ¡Hola a todos! Únete a mi canal de Twitch, sylenthmen, para transmisiones
+      en vivo llenas de acción y diversión. Sígueme y activa las notificaciones
+      para no perderte nada.
+    </p>
+    <div class="mt-4 pt-2">
+      <a
+        target="_blank"
+        class="mt-8 p-4 bg-purple-950 rounded-md capitalize"
+        href="https://www.twitch.tv/sylenthmen">visitar twitch</a
+      >
+    </div>
+  </div>
+</div>
+<style>
+  :root {
+    --colorCard: #8f45ffff;
+    --colorBanner: #ae4cff;
+    --sombrita: rgba(190, 0, 237, 0.2);
+  }
+  .card {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    background-color: var(--colorCard);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--sombrita);
+  }
+
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--colorBanner);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .card:hover svg {
+    scale: 0;
+  }
+
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.4;
+  }
+</style>

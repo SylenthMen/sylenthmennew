@@ -1,0 +1,33 @@
+---
+import Titulos from "./Titulos.astro";
+import CardY from "./CardY.astro";
+import CardT from "./CardT.astro";
+import CardTT from "./CardTT.astro";
+import CardD from "./CardD.astro";
+import Tooltip from "./Tooltip.astro";
+---
+
+<div class="flex flex-col p-4">
+  <div class="flex gap-x-2">
+    <Titulos subTitu="gaming" />
+    <Tooltip toltip="has clic en cualquier tarjeta para ver más información." />
+  </div>
+  <p>
+    Puedes echar un vistazo a mis streams en twitch, videos editados en tiktok o
+    youtube.
+  </p>
+</div>
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+  <div class="flex flex-col items-center">
+    <CardY />
+  </div>
+  <div class="flex flex-col items-center">
+    <CardT />
+  </div>
+  <div class="flex flex-col items-center">
+    <CardD />
+  </div>
+  <div class="flex flex-col items-center">
+    <CardTT />
+  </div>
+</section>

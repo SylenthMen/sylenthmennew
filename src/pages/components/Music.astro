@@ -1,12 +1,13 @@
 ---
 import Titulos from "./Titulos.astro";
 import Tooltip from "./Tooltip.astro";
+import Boton from "./Boton.astro";
 ---
 
 <section id="musica" class="p-4">
   <div class="flex gap-x-2">
     <Titulos subTitu="Musica" />
-    <Tooltip toltip="has click en cualquier imagen y te llevara a spotify" />
+    <Tooltip toltip="has clic en cualquier imagen y te llevara a spotify" />
   </div>
   <p class="text-white/55 pb-4">aqui encontraras mi musica mas reciente</p>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -18,7 +19,7 @@ import Tooltip from "./Tooltip.astro";
         <img
           class="m-auto p-2 hover:scale-105 transition-all rounded-3xl w-96"
           src="/smash_heart.webp"
-          alt="psynow image artcover"
+          alt="smash heart artcover"
         /></a
       >
     </div>
@@ -30,7 +31,7 @@ import Tooltip from "./Tooltip.astro";
         <img
           class="m-auto p-2 hover:scale-105 transition-all rounded-3xl w-96"
           src="/psynow.webp"
-          alt="psynow image artcover"
+          alt="psynow artcover"
         /></a
       >
     </div>
@@ -42,9 +43,15 @@ import Tooltip from "./Tooltip.astro";
         <img
           class="m-auto p-2 hover:scale-105 transition-all rounded-3xl w-96"
           src="/galaxyx.webp"
-          alt="psynow image artcover"
+          alt="galaxy artcover"
         /></a
       >
     </div>
+  </div>
+  <div class="flex flex-col justify-center items-center mt-4">
+    <Boton
+      Nboton="ver más"
+      link="https://open.spotify.com/intl-es/artist/5srgKJwPk1Fo70Uj5Kbrpl?si=M_w9YL_7TN6UrKDHi8CXiQ"
+    />
   </div>
 </section>
