@@ -8,7 +8,7 @@ import Twitch from "./iconos/Twitch.astro";
 ---
 
 <header class="bg-black text-white items-center font-bold w-full">
-  <nav class="flex justify-between p-4 items-center w-full sticky top-0">
+  <nav class="flex justify-between p-4 items-center w-full sticky-nav">
     <div class="items-center">
       <a href="/"
         ><img
@@ -18,7 +18,7 @@ import Twitch from "./iconos/Twitch.astro";
         /></a
       >
     </div>
-    <div class="menu flex gap-x-4 .hidden md:flex">
+    <div class="menu flex gap-x-4 hidden md:flex">
       <a
         class="hover:text-purple-700 transition-all capitalize cursor-pointer"
         href="/">Principal</a
@@ -192,6 +192,12 @@ import Twitch from "./iconos/Twitch.astro";
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 </style>
 
